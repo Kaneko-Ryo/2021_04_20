@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 set +x #コマンドの非表示
-value=$(($1))
+value=$1
 errorMsg="This Value is Error" #エラーメッセージ
 
 #正しい値の時
