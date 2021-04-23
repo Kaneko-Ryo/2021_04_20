@@ -3,7 +3,7 @@
 set +x #コマンドの非表示
 value=$1
 errorMsg="This Value is Error" #エラーメッセージ
-expr $value + 1 > dev/null 2>&1
+expr $value + 1 > /dev/null 2>&1
 ret=$?
 
 if [ $((ret)) -lt $((2)) ]; then #正しい値
